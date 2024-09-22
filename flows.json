@@ -2,7 +2,7 @@
     {
         "id": "1d19f43ae75b8189",
         "type": "tab",
-        "label": "Flow 1",
+        "label": "Run Python Test",
         "disabled": false,
         "info": "",
         "env": []
@@ -29,7 +29,7 @@
         "id": "71b44c5d2924b249",
         "type": "debug",
         "z": "1d19f43ae75b8189",
-        "name": "debug 1",
+        "name": "print-console",
         "active": false,
         "tosidebar": true,
         "console": true,
@@ -38,7 +38,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 470,
+        "x": 480,
         "y": 220,
         "wires": []
     },
@@ -66,6 +66,20 @@
         "payloadType": "date",
         "x": 250,
         "y": 240,
+        "wires": [
+            [
+                "71b44c5d2924b249"
+            ]
+        ]
+    },
+    {
+        "id": "0d323f3731a7353a",
+        "type": "status",
+        "z": "1d19f43ae75b8189",
+        "name": "",
+        "scope": null,
+        "x": 220,
+        "y": 340,
         "wires": [
             [
                 "71b44c5d2924b249"
